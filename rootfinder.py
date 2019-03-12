@@ -4,7 +4,7 @@ def bisect(f, a, b, eps = 1.e-6):
     fa, fb, gap  = f(a), f(b), abs(b-a)
 
     if (fa*fb > 0.0):
-        print('Bisection error: no root bracketed')
+        #print('Bisection error: no root bracketed')
         return None
     elif fa == 0.0: return a
     elif fb == 0.0: return b
