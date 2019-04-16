@@ -115,7 +115,7 @@ def anneal(r, cycles, T_max = 20, T_min = 1e-3, tau = 1e4):
     return r, D, T
 
 
-r_init = initialize(N = 500)
+r_init = initialize(N = 10)
 r, D, T = anneal(r_init, cycles = 5, T_max = 200, T_min = 1e-3, tau = 2e4)
 
 fig = plt.figure(figsize = [9,8])
